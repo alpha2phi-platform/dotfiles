@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=xcape -d
+Terminal=false
+Name=Keyboard Setup
+Comment=Custom keyboard setup
+X-GNOME-Autostart-enabled=true
