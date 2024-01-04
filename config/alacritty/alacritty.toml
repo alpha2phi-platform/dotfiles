@@ -76,7 +76,7 @@ shape = "Block"
 LANG = "en_US.UTF-8"
 
 [font]
-size = 12
+size = 14
 
 [font.bold]
 family = "Maple Mono NF"
