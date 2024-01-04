@@ -27,4 +27,10 @@ return {
     },
   },
   { "tiagovla/scope.nvim", event = "VeryLazy", opts = {} },
+  {
+    "folke/noice.nvim",
+    opts = function(_, opts)
+      opts.presets.lsp_doc_border = true
+    end,
+  },
 }
