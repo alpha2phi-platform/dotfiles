@@ -35,4 +35,20 @@ return {
       { "<leader>rx", function() require('refactoring').refactor('Extract Variable') end, mode = {"v"}, desc = "Extract Variable" },
     },
   },
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      {
+        "honza/vim-snippets",
+        config = function()
+          require("luasnip.loaders.from_snipmate").lazy_load()
+
+          -- One peculiarity of honza/vim-snippets is that the file with the global snippets is _.snippets, so global snippets
+          -- are stored in `ls.snippets._`.
+          -- We need to tell luasnip that "_" contains global snippets:
+          require("luasnip").filetype_extend("all", { "_" })
+        end,
+      },
+    },
+  },
 }
