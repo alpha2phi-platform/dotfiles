@@ -17,7 +17,6 @@ return {
   },
   {
     "akinsho/bufferline.nvim",
-    event = "VeryLazy",
     opts = {
       options = {
         mode = "tabs",
@@ -26,7 +25,7 @@ return {
       },
     },
   },
-  { "tiagovla/scope.nvim", event = "VeryLazy", opts = {} },
+  { "tiagovla/scope.nvim", event = "BufReadPre", opts = {} },
   {
     "folke/noice.nvim",
     opts = function(_, opts)
