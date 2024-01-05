@@ -57,7 +57,21 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>a"] = { name = "+assistant" },
+        ["<leader>a"] = {
+          name = "+assistant",
+          b = {
+            function()
+              require("utils.coding").cht()
+            end,
+            "Cheatsheets",
+          },
+          y = {
+            function()
+              require("utils.coding").stack_overflow()
+            end,
+            "Stack Overflow",
+          },
+        },
         ["<leader>j"] = { name = "+harpoon" },
         ["<leader>r"] = { name = "+refactor" },
       },
