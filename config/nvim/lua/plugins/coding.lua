@@ -40,4 +40,46 @@ return {
       },
     },
   },
+  {
+    "nvim-neotest/neotest",
+    -- stylua: ignore
+    keys = {
+      { "<leader>tl", function() require("neotest").run.run_last() end, desc = "Run Last" },
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        pyright = {
+          settings = {
+            python = {
+              analysis = {
+                autoImportCompletions = true,
+                typeCheckingMode = "off",
+                autoSearchPaths = true,
+                useLibraryCodeForTypes = true,
+                diagnosticMode = "openFilesOnly",
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+  {
+    "sourcegraph/sg.nvim",
+    event = "VeryLazy",
+    opts = {},
+  },
+  {
+    "jackMort/ChatGPT.nvim",
+    cmd = { "ChatGPT", "ChatGPTRun", "ChatGPTActAs", "ChatGPTCompleteCode", "ChatGPTEditWithInstructions" },
+    keys = {
+      { "<leader>aa", "<cmd>ChatGPT<cr>", desc = "Chat" },
+      { "<leader>ac", "<cmd>ChatGPTRun complete_code<cr>", mode = { "n", "v" }, desc = "Complete Code" },
+      { "<leader>ae", "<cmd>ChatGPTEditWithInstructions<cr>", mode = { "n", "v" }, desc = "Edit with Instructions" },
+    },
+    opts = {},
+  },
 }

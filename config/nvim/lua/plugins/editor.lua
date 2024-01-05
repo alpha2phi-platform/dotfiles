@@ -57,6 +57,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
+        ["<leader>a"] = { name = "+assistant" },
         ["<leader>j"] = { name = "+harpoon" },
         ["<leader>r"] = { name = "+refactor" },
       },

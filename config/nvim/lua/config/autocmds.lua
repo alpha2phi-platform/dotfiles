@@ -12,3 +12,15 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
     vim.cmd("set formatoptions-=cro")
   end,
 })
+
+vim.api.nvim_set_hl(0, "TerminalCursorShape", { underline = true })
+vim.api.nvim_create_autocmd("TermEnter", {
+  callback = function()
+    vim.cmd([[setlocal winhighlight=TermCursor:TerminalCursorShape]])
+  end,
+})
+vim.api.nvim_create_autocmd("VimLeave", {
+  callback = function()
+    vim.cmd([[set guicursor=a:ver25]])
+  end,
+})
