@@ -1,6 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/alpha2phi/workspace/alpha2phi-platform/dotfiles
+- /home/alpha2phi/workspace/alpha2phi-platform/alpha2phi-app
+- /home/alpha2phi/workspace/software/LazyVim
+- /home/alpha2phi/workspace/software/sst
 - /home/alpha2phi/workspace/alpha2phi/modern-neovim
 startuppopupversion: 5
 customcommandshistory: []
