@@ -78,4 +78,12 @@ return {
       },
     },
   },
+  {
+    "echasnovski/mini.misc",
+    config = true,
+    --stylua: ignore
+    keys = {
+      { "<leader>wz", function() require("mini.misc").zoom() end, desc = "Toggle Zoom" },
+    },
+  },
 }
