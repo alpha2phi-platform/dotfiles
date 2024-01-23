@@ -129,4 +129,9 @@ return {
     },
     opts = {},
   },
+  {
+    "vuki656/package-info.nvim",
+    event = { "BufRead package.json" },
+    opts = {},
+  },
 }
