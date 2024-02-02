@@ -134,4 +134,32 @@ return {
     event = { "BufRead package.json" },
     opts = {},
   },
+  {
+    "uga-rosa/ccc.nvim",
+    opts = {},
+    cmd = { "CccPick", "CccConvert", "CccHighlighterEnable", "CccHighlighterDisable", "CccHighlighterToggle" },
+  },
+  {
+    "kylechui/nvim-surround",
+    event = "VeryLazy",
+    opts = {
+      keymaps = {
+        insert = "<C-g>s",
+        insert_line = "<C-g>S",
+        normal = "gs",
+        normal_cur = "gss",
+        normal_line = "gS",
+        normal_cur_line = "gSS",
+        visual = "S",
+        visual_line = "gS",
+        delete = "ds",
+        change = "cs",
+        change_line = "cS",
+      },
+    },
+  },
+  {
+    "echasnovski/mini.surround",
+    enabled = false,
+  },
 }

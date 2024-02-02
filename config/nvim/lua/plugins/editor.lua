@@ -84,7 +84,6 @@ return {
     --stylua: ignore
     keys = {
       { "<leader>wz", function() require("mini.misc").zoom() end, desc = "Toggle Zoom" },
-      { "<c-w>o", function() require("mini.misc").zoom() end, desc = "Toggle Zoom" },
     },
   },
 }
