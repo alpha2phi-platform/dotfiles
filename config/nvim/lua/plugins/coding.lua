@@ -150,7 +150,7 @@ return {
         normal_cur = "gss",
         normal_line = "gS",
         normal_cur_line = "gSS",
-        visual = "S",
+        visual = "Z",
         visual_line = "gz",
         delete = "ds",
         change = "cs",
