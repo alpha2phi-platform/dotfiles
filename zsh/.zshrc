@@ -126,6 +126,7 @@ eval "$(zoxide init zsh --cmd j)"
 set -o vi
 
 # Node version manager
+export PATH="/home/alpha2phi/.local/share/fnm:$PATH"
 eval "$(fnm env --use-on-cd)"
 
 
@@ -156,3 +157,4 @@ esac
 
 # environmental credentials
 source $HOME/.credentials
+
