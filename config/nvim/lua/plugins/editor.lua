@@ -73,7 +73,7 @@ return {
           },
         },
         ["<leader>j"] = { name = "+harpoon" },
-        ["<leader>r"] = { name = "+refactor" },
+        -- ["<leader>r"] = { name = "+refactor" },
         ["<leader>o"] = { name = "+overseer" },
       },
     },

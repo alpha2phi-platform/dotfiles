@@ -30,18 +30,18 @@ return {
     },
     opts = { snippet_engine = "luasnip" },
   },
-  {
-    "ThePrimeagen/refactoring.nvim",
-    opts = {},
-    -- stylua: ignore
-    keys = {
-			{ "<leader>rr", function() require("refactoring").select_refactor({}) end, mode = "v", noremap = true, silent = true, expr = false, desc = "Select Refactor" },
-      { "<leader>rP", function() require('refactoring').debug.printf({below = false}) end,  mode = {"n"}, desc = "Debug Print" },
-      { "<leader>rc", function() require('refactoring').debug.cleanup({}) end, mode = {"n"}, desc = "Debug Cleanup" },
-      { "<leader>rp", function() require('refactoring').debug.print_var({normal = true}) end, mode = {"n"}, desc = "Debug Print Variable" },
-      { "<leader>rp", function() require('refactoring').debug.print_var({}) end, mode = {"v"}, desc =  "Debug Print Variable" },
-    },
-  },
+  -- {
+  --   "ThePrimeagen/refactoring.nvim",
+  --   opts = {},
+  --   -- stylua: ignore
+  --   keys = {
+  -- 	{ "<leader>rr", function() require("refactoring").select_refactor({}) end, mode = "v", noremap = true, silent = true, expr = false, desc = "Select Refactor" },
+  --     { "<leader>rP", function() require('refactoring').debug.printf({below = false}) end,  mode = {"n"}, desc = "Debug Print" },
+  --     { "<leader>rc", function() require('refactoring').debug.cleanup({}) end, mode = {"n"}, desc = "Debug Cleanup" },
+  --     { "<leader>rp", function() require('refactoring').debug.print_var({normal = true}) end, mode = {"n"}, desc = "Debug Print Variable" },
+  --     { "<leader>rp", function() require('refactoring').debug.print_var({}) end, mode = {"v"}, desc =  "Debug Print Variable" },
+  --   },
+  -- },
   {
     "L3MON4D3/LuaSnip",
     dependencies = {
