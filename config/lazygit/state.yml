@@ -1,7 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/alpha2phi/workspace/alpha2phi-platform/dotfiles
-- /home/alpha2phi/workspace/mengwangk/myself
+- /home/alpha2phi/workspace/development/alpha2phi/nvim-ide
+- /home/alpha2phi/workspace/development/dotfiles
+- /home/alpha2phi/workspace/development/alpha2phi/azure-fullstack-swa
 startuppopupversion: 5
 customcommandshistory: []
 hidecommandlog: false

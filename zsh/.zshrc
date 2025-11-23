@@ -158,3 +158,13 @@ esac
 # environmental credentials
 source $HOME/.credentials
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
+export CODEX_HOME=/home/alpha2phi/workspace/development/alpha2phi/alpha-trader/.codex
+
