@@ -111,7 +111,7 @@ source $ZSH/oh-my-zsh.sh
 . "$HOME/.cargo/env"
 
 # bob, getnf
-export PATH=$HOME/.local/share/bob/nvim-bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/.cargo/bin:$HOME/.local/bin:$PATH
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -165,6 +165,6 @@ export NVM_DIR="$HOME/.nvm"
 
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
-export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
+export PATH=$PATH:$HOME/.cargo/bin
 export CODEX_HOME=/home/alpha2phi/workspace/development/alpha2phi/alpha-trader/.codex
 
